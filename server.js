@@ -129,7 +129,7 @@ async function handleTitleMessage(ws, body) {
   try {
     const payload = JSON.parse(titleText);
     
-    if (payload.pn && payload.pm && payload.nn) {
+    if (payload.pn && payload.nn) {
       console.log('✅ Family Life+ payload detected!');
       await handleFamilyLifePayload(ws, payload);
     } else {

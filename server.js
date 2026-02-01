@@ -1,8 +1,3 @@
-// Add at the top:
-if (payload.aiProvider) {
-  console.log(`Using AI: ${payload.aiProvider}`);
-  // Switch between Gemini/Grok based on this
-}
 
 const express = require('express');
 const { WebSocketServer } = require('ws');
